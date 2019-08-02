@@ -38,8 +38,6 @@ def histogram(df, x, rows, cols, index):
     plt.hist(df[x])
     plt.xlabel(x)
     plt.ylabel('counts')
-    # plt.annotate(fig, xy=(76, 0.75))
-    # plt.title(x)
 
 def create_hist(df_F):
     # forwards
@@ -62,13 +60,11 @@ def create_scat_plots(df):
     # scat_plot(df_F, "pts y/n l_3",'points', "F", 4, 2, 4, "D")
     scat_plot(df, "powerPlayTimeOnIce",'points',  2, 2, 2, "B")
     scat_plot(df, "ppg", 'points', 2, 2, 3, "C")
-    plt.savefig('scatter_F.png', ppi = 1000)
-    plt.show()
     # scat_plot(df_F, "games l_21",'points', "F",  4, 2, 7, "G")
     # scat_plot(df_F, "games l_7",'points', "F",  4, 2, 8, "H")
     # plt.tight_layout
-    # # plt.show()
-    # plt.savefig('scatter_F.png')
+    plt.savefig('scatter_F.png', ppi = 1000)
+    plt.show()
 
 def main(df):
     # scatterplots
