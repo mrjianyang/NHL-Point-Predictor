@@ -46,6 +46,27 @@ SVC Model           |  Confusion Matrix
 |<img src="model.png"  width="540" height="380">  |  <img src="confusion_matrix.png"  width="540" height="380">
 | Visual Representation of SVC model with C = 4 and kernel = linear. Training Score = 0.676, testing score = 0.676. | Total predictions = 68314. Correct predictions: category 0 (no points) = 41047 Top left, category 1 (points) = 5019 bottom right. <br />False negatives (bottom left) = 19085, False positives (top right) = 3163| 
 
+SVC Model           |
+:-------------------------:|
+|<img src="model.png"  width="540" height="380">  |
+| Visual Representation of SVC model with C = 4 and kernel = linear. Training Score = 0.676, testing score = 0.676. 
+
+Confusion Matrix
+|:-------------------------:
+|  <img src="confusion_matrix.png"  width="540" height="380">
+| Total predictions = 68314. Correct predictions: category 0 (no points) = 41047 Top left, category 1 (points) = 5019 bottom right. <br />False negatives (bottom left) = 19085, False positives (top right) = 3163| 
+
+
+Scatterplots           |
+:-------------------------:|
+|<img src="scatterplot.jpg"  width="540" height="380">  |
+| Scatterplots of forward’s features. A) timeOnIce vs points correlation = 0.286. B) ppg vs points correlation = 0.272. C) powerPlayTimeOnIce vs points correlation = 0.252. |
+
+Histograms           |
+:-------------------------:|
+|<img src="histograms.jpg"  width="540" height="380">  |
+| Histograms all skaters Blue distribution is all skaters (forwards + defenseman), orange distribution is only forwards, green distribution is only defenseman. A) timeOnIce. B) shots. C) pts y/n l_7. D) pts y/n l_3. E) powerPlayTimeOnIce. F) ppg. G) games l_21. H) games l_7 |
+
 ## Discussion
 
 For our model’s features, we analyzed time on ice (timeOnIce), shots, power play time on ice (powerPlayTimeOnIce), points per game (ppg), number of games in the last seven in which a player received at least a point (pts y/n l_7), number of games in the last three in which a player received at least a point (pts y/n l_3), number of games in the last twenty one days (games l_21), and number of games in the last seven days (games l_7) (Table 1, Appendix I-III). Of the features that we manually engineered, only ppg had improved our model (score = 0.658 without vs score = 0.676 with). Although pts y/n l_7 and pts y/n l_3 appeared to have a positively correlated association with points, the model could not create a decision boundary when they were both included – so they were removed. Because of games l_21 and game l_7’s very weak positive correlation with points, we opted not to use them. It was hypothesized that perhaps a better prediction could be made if the model could capture more subtle aspects of player performance: phenomenon such as momentum/point streaks, consistency, and fatigue. Specifically, the feature pts y/n l_x (x = number of games) was meant to track if a player was on a point streak. The more games a player had with points, the more likely he was on a hot streak, and therefore they could ride their momentum into the next game. Ppg was a feature meant to track a player’s consistency. The more points a player had per game could indicate how likely the player is to get a point in the next game – a player with a higher ppg is more likely than a player with a lower ppg. Finally, games l_d (games in the last d days) was meant to represent how fatigued a player could be. It was hypothesized that a player who plays more games in the last d days would be more fatigued than another player who has played less games over those same d days. This could result in a poorer player performance for the game being predicted. 
