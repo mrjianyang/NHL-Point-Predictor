@@ -55,19 +55,6 @@ def create_hist(df_F):
     plt.show()
 
 def create_scat_plots(df):
-    # all 
-    # scat_plot(df, "timeOnIce", 'points', "F and D", 4, 2, 1, "A")
-    # scat_plot(df, "shots", 'points', "both", 4, 2, 2, "B")
-    # scat_plot(df, "pts y/n l_7",'points', "F and D",  4, 2, 3, "C")
-    # scat_plot(df, "pts y/n l_3",'points', "F and D",  4, 2, 4, "D")
-    # scat_plot(df, "powerPlayTimeOnIce",'points', "F and D",  4, 2, 5, "E")
-    # scat_plot(df, "ppg",'points', "F and D",  4, 2, 6, "F")
-    # scat_plot(df, "games l_21", 'points', "F and D", 4, 2, 7, "G")
-    # scat_plot(df, "games l_7",'points', "F and D",  4, 2, 8, "H")
-    # plt.tight_layout    
-    # # plt.show()
-    # plt.savefig('scatter_all.png')
-
     # forwards
     scat_plot(df, "timeOnIce", 'points', 2, 2, 1, "A")
     # scat_plot(df_F, "shots",'points', "F", 4, 2, 2, "B")
@@ -82,19 +69,6 @@ def create_scat_plots(df):
     # plt.tight_layout
     # # plt.show()
     # plt.savefig('scatter_F.png')
-
-    # defenseman
-    # scat_plot(df_D, "timeOnIce",'points', "D",  4, 2, 1, "A")
-    # scat_plot(df_D, "shots", 'points', "D", 4, 2, 2, "B")
-    # scat_plot(df_D, "pts y/n l_7",'points', "D",  4, 2, 3, "C")
-    # scat_plot(df_D, "pts y/n l_3", 'points', "D", 4, 2, 4, "D")
-    # scat_plot(df_D, "powerPlayTimeOnIce",'points', "D",  4, 2, 5, "E")
-    # scat_plot(df_D, "ppg", "points", "D", 4, 2, 6, "F")
-    # scat_plot(df_D, "games l_21",'points', "D",  4, 2, 7, "G")
-    # scat_plot(df_D, "games l_7", 'points', "D",4, 2, 8, "H")
-    # plt.tight_layout
-    # # plt.show()
-    # plt.savefig('scatter_D.png')
 
 def main(df):
     # scatterplots
