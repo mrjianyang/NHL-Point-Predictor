@@ -35,6 +35,22 @@ The features chosen for the final model are:
 
 GridSearchCV() was used to efficiently determine the optimal parameters for the SVC model. 
 
+Scatterplots           |
+:-------------------------:|
+|<img src="scatterplot.jpg"  width="540" height="380">  |
+| Scatterplots of forward’s features. A) timeOnIce vs points correlation = 0.286. B) ppg vs points correlation = 0.272. C) powerPlayTimeOnIce vs points correlation = 0.252. |
+
+Histograms           |
+:-------------------------:|
+|<img src="histograms.jpg"  width="540" height="380">  |
+| Histograms all skaters Blue distribution is all skaters (forwards + defenseman), orange distribution is only forwards, green distribution is only defenseman. A) timeOnIce. B) shots. C) pts y/n l_7. D) pts y/n l_3. E) powerPlayTimeOnIce. F) ppg. G) games l_21. H) games l_7 |
+
+Heatmaps           |
+:-------------------------:|
+|<img src="heatmap.jpg"  width="540" height="380">  |
+| Heatmap of forwards’ features. A) pts y/n l_3 vs points correlation = 0.173. B) pts y/n l_7 vs points correlation = 0.217. C) games l_21 vs points correlation = 0.0579. D) games l_7 vs points correlation = 0.0393. E) shots vs points correlation = 0.312. |
+
+
 ## Results
 
 A value of C = 4 with a linear kernel was determined to be the optimal parameter for the dataset. The model achieved a training score of 0.676 and a testing score of 0.676.  A Confusion matrix was also created to aid with the visual representation of false positives and false negatives.
@@ -45,16 +61,6 @@ SVC Model           |  Confusion Matrix
 :-------------------------:|:-------------------------:
 |<img src="model.png"  width="540" height="380">  |  <img src="confusion_matrix.png"  width="540" height="380">
 | Visual Representation of SVC model with C = 4 and kernel = linear. Training Score = 0.676, testing score = 0.676. | Total predictions = 68314. Correct predictions: category 0 (no points) = 41047 Top left, category 1 (points) = 5019 bottom right. <br />False negatives (bottom left) = 19085, False positives (top right) = 3163| 
-
-Scatterplots           |
-:-------------------------:|
-|<img src="scatterplot.jpg"  width="540" height="380">  |
-| Scatterplots of forward’s features. A) timeOnIce vs points correlation = 0.286. B) ppg vs points correlation = 0.272. C) powerPlayTimeOnIce vs points correlation = 0.252. |
-
-Histograms           |
-:-------------------------:|
-|<img src="histograms.jpg"  width="540" height="380">  |
-| Histograms all skaters Blue distribution is all skaters (forwards + defenseman), orange distribution is only forwards, green distribution is only defenseman. A) timeOnIce. B) shots. C) pts y/n l_7. D) pts y/n l_3. E) powerPlayTimeOnIce. F) ppg. G) games l_21. H) games l_7 |
 
 ## Discussion
 
