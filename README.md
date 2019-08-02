@@ -8,9 +8,7 @@ All data used in the project came from a user on Kaggle<sup>1</sup>.
 
 ## Question
 
-##### 1. Can we predict the amount of points a player will score in a future match based off of past performance.
-
-##### 2. Can we predict whether a player gets a point in a game.
+##### Can we predict if a player will score in a match based off of past performance.
 
 ## Getting Results
 
