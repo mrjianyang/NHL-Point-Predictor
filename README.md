@@ -4,7 +4,7 @@
 
 #### Data
 
-All data used in the project came from a user on Kaggle.
+All data used in the project came from a user on Kaggle<sup>1</sup>.
 
 #### Question
 
@@ -35,7 +35,7 @@ The features chosen for the final model are:
 | powerPlayTimeOnIce (ppTOI) | 0.252 | 
 | points per game (ppg) | 0.273 | 
 
-GridSearchCV() was used to efficiently determine what parameters were optimal for the SVC model. 
+GridSearchCV() was used to efficiently determine the optimal parameters for the SVC model. 
 
 
 ## Results
@@ -57,3 +57,7 @@ Another limitation to our prediction is that we use every forwards’ data to cr
 As an aside, another significant limitation of our prediction is that we predict whether a player gets a point based on data for features that already exist. Specifically: if we truly wanted a model that could make predictions, we would need to use values for features that did not already exist. Likely, we would need much more advanced techniques such as forecasting and time series analysis to make our predictions. 
 
 The prediction of whether a player gets a point in a certain game is tantalizing for any hockey enthusiast. If a model can accurately and reliably make such a prediction, such information can give an advantage to any analyst. Yet, it should be clear that these findings are not without their limitations. These findings should be taken at face value and it would be optimistic, even naïve, to expect accurate and precise predictions without drastic improvements and refinements to the model.
+
+## References
+
+1.	Kaggle. (2018) NHL Game Data Game, team, player and plays information including x,y coordinates. Retrieved from https://www.kaggle.com/martinellis/nhl-game-data
