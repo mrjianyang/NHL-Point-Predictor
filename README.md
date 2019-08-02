@@ -27,11 +27,12 @@ New variables that are based off of the given dataset were created in attempt to
 Scatterplot and correlation analyses are done to identify which features are to be used in the machine learning model. Predictin whether a player gets a point is a binary classification problem, where 1 means a player gets a point and 0 means a player does not get a point. SVC was then chosen to make our predictions. The dataset is split into a 3:1 (or is it 4:1) ratio corresponding to a training:testing dataset. MinMaxScaler() was also used so that the features would be on the same scale.
 
 The features chosen for the final model are:
-
-1. timeOnIce (TOI) (r^2=0.286)
-2. shots (r^2 = 0.252)
-3. powerPlayTimeOnIce (ppTOI) (r^2 = 0.273)
-4. points per game (ppg) (r^2 = 0.273)
+| feature | r<sup>2</sup> |
+| ------ | ------ |
+| timeOnIce (TOI) | 0.286 |
+| shots | 0.318 | 
+| powerPlayTimeOnIce (ppTOI) | 0.252 | 
+| points per game (ppg) | 0.273 | 
 
 GridSearchCV() was used to efficiently determine what parameters were optimal for the SVC model. 
 
@@ -41,7 +42,6 @@ GridSearchCV() was used to efficiently determine what parameters were optimal fo
 A value of C = 4 with a linear kernel was determined to be the optimal parameter for the dataset. The model achieved a training score of 0.676 and a testing score of 0.676 ![Visual Representation of SVC model with C=4 and kernel = linear. Training Score = 0.676, testing score = 0.676](/model.png)
 
 A Confusion matrix was also created to aid with the visual representation of false positives and false negatives.![Confusion Matrix using the SVC model](/confusion_matrix.png)
-<img src="confusion_matrix.png" alt="drawing" width="200" height"20"/>
 Total predictions = 68314. Correct predictions: category 0 (no points) = 41047 Top left, category 1 (points) = 5019 bottom right. Incorrect predictions: false negatives = 19085 bottom left, false positives = 3163 top right 
 
 ## Discussion
