@@ -2,21 +2,21 @@
 
 ##### By Matthew Jung 301261171, Alex Hua 301261352
 
-#### Data
+## Data
 
 All data used in the project came from a user on Kaggle<sup>1</sup>.
 
-#### Question
+## Question
 
 ##### 1. Can we predict the amount of points a player will score in a future match based off of past performance.
 
 ##### 2. Can we predict whether a player gets a point in a game.
 
-#### Getting Results
+## Getting Results
 
 The project utilizes statistical methods, machine learning tools and computer science to answer the question. Correlative statistics is used to determine what features are the most statistically relevant to the answer. The Support Vector Classifier (SVC) is used to predict whether a player gets a point.
 
-#### Data Analysis
+## Data Analysis
 
 A skater is defined as any player that is not a goalie. A filter stage filtered out skaters who had not played any games or had no game data. The dataset is further filtered for skaters who were non-defenseman, leaving only forwards.
 
@@ -36,7 +36,6 @@ The features chosen for the final model are:
 | points per game (ppg) | 0.273 | 
 
 GridSearchCV() was used to efficiently determine the optimal parameters for the SVC model. 
-
 
 ## Results
 
