@@ -46,17 +46,6 @@ SVC Model           |  Confusion Matrix
 |<img src="model.png"  width="540" height="380">  |  <img src="confusion_matrix.png"  width="540" height="380">
 | Visual Representation of SVC model with C = 4 and kernel = linear. Training Score = 0.676, testing score = 0.676. | Total predictions = 68314. Correct predictions: category 0 (no points) = 41047 Top left, category 1 (points) = 5019 bottom right. <br />False negatives (bottom left) = 19085, False positives (top right) = 3163| 
 
-SVC Model           |
-:-------------------------:|
-|<img src="model.png"  width="540" height="380">  |
-| Visual Representation of SVC model with C = 4 and kernel = linear. Training Score = 0.676, testing score = 0.676. 
-
-Confusion Matrix
-|:-------------------------:
-|  <img src="confusion_matrix.png"  width="540" height="380">
-| Total predictions = 68314. Correct predictions: category 0 (no points) = 41047 Top left, category 1 (points) = 5019 bottom right. <br />False negatives (bottom left) = 19085, False positives (top right) = 3163| 
-
-
 Scatterplots           |
 :-------------------------:|
 |<img src="scatterplot.jpg"  width="540" height="380">  |
