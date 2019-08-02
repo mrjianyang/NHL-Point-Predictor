@@ -27,6 +27,7 @@ New variables that are based off of the given dataset were created in attempt to
 Scatterplot and correlation analyses are done to identify which features are to be used in the machine learning model. Predictin whether a player gets a point is a binary classification problem, where 1 means a player gets a point and 0 means a player does not get a point. SVC was then chosen to make our predictions. The dataset is split into a 3:1 (or is it 4:1) ratio corresponding to a training:testing dataset. MinMaxScaler() was also used so that the features would be on the same scale.
 
 The features chosen for the final model are:
+
 | feature | r<sup>2</sup> |
 | ------ | ------ |
 | timeOnIce (TOI) | 0.286 |
