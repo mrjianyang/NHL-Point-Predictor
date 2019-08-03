@@ -2,22 +2,67 @@
 
 ##### By Matthew Jung 301261171, Alex Hua 301261352
 
-## Instructions 
+# Instructions 
+
+## Libraries Needed
+
+import numpy as np
+
+import pandas as pd
+
+import sys
+
+from sklearn.model_selection import train_test_split
+
+from sklearn.pipeline import make_pipeline
+
+from sklearn.preprocessing import MinMaxScaler
+
+from sklearn.model_selection import GridSearchCV
+
+from sklearn.neighbors import KNeighborsClassifier
+
+from sklearn.svm import SVC
+
+from sklearn.decomposition import PCA
+
+from matplotlib import cm
+
+import matplotlib.pyplot as plt
+
+from sklearn import metrics
+
+import seaborn as sns
+
+import os.path
+
+import os
+
+from datetime import date, timedelta, datetime
+
+from scipy import stats
+
+## How to Run the Scripts
 
 1) In 01-extract.py we need to input 4 parameters on command line.
-    command: python3 game_skater_stats.csv, player_info.csv, game.csv, player_complete
+    
+    **python3 01-extract.py game_skater_stats.csv, player_info.csv, game.csv, player_complete**
 
 2) In 02-filter.py we need to input 2 parameters, first is name of csv created from step 1 and second is the name of the new csv created
-    command: python3 02-filter.py player_complete.csv final.csv
+    
+    **python3 02-filter.py player_complete.csv final.csv**
 
 3) In 03-feature-engineering.py we need to input 1 parameter, the name of the csv from step 2
-    command: python3 03-feature-engineering.py final.csv
+    
+    **python3 03-feature-engineering.py final**
 
 4) In 04-visualize.py we need to input 1 parameter, the name of the csv from step 2
-    command: python3 04-visualize.py final.csv
+    
+    **python3 04-visualize.py final.csv**
 
 5) In 05-create_model.py we need to input 1 parameter, the name of the csv from step 2
-    command: python3 05-create_model.py final.csv
+    
+    **python3 05-create_model.py final.csv**
 
 ## Data
 
