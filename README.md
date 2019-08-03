@@ -2,13 +2,28 @@
 
 ##### By Matthew Jung 301261171, Alex Hua 301261352
 
+## Instructions 
+
+1) In 01-extract.py we need to input 4 parameters on command line. Input game_skater_stats.csv, player_info.csv, game.csv, player_complete 
+
+2) In 02-filter.py 
+
+3) In 03-feature-engineering input
+
+
+
+
+
+
+
+
 ## Data
 
 All data used in the project came from a user on Kaggle<sup>1</sup>.
 
 ## Question
 
-##### Can we predict if a player will score in a match based off of past performance.
+##### Can we predict if a player will get a point in a match based off of past performance.
 
 ## Getting Results
 
