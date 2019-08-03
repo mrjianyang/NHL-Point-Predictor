@@ -4,18 +4,20 @@
 
 ## Instructions 
 
-1) In 01-extract.py we need to input 4 parameters on command line. Input game_skater_stats.csv, player_info.csv, game.csv, player_complete 
+1) In 01-extract.py we need to input 4 parameters on command line.
+    command: python3 game_skater_stats.csv, player_info.csv, game.csv, player_complete
 
-2) In 02-filter.py 
+2) In 02-filter.py we need to input 2 parameters, first is name of csv created from step 1 and second is the name of the new csv created
+    command: python3 02-filter.py player_complete.csv final.csv
 
-3) In 03-feature-engineering input
+3) In 03-feature-engineering.py we need to input 1 parameter, the name of the csv from step 2
+    command: python3 03-feature-engineering.py final.csv
 
+4) In 04-visualize.py we need to input 1 parameter, the name of the csv from step 2
+    command: python3 04-visualize.py final.csv
 
-
-
-
-
-
+5) In 05-create_model.py we need to input 1 parameter, the name of the csv from step 2
+    command: python3 05-create_model.py final.csv
 
 ## Data
 
