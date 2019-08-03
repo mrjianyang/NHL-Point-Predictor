@@ -107,7 +107,6 @@ def main():
 
     dateparse = lambda x: pd.datetime.strptime(x, '%Y-%m-%d')
     df = pd.read_csv(sys.argv[1],  parse_dates=['date_time'], date_parser=dateparse)
-    # df = df.sort_values(['player_id', 'season', 'date_time_GMT'])
     create_cols(df)
     df['points y/n'] = df['points'].apply(points_y_n)
 
