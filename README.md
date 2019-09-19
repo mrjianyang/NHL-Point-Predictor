@@ -64,7 +64,7 @@ from scipy import stats
 
 ## Data
 
-All data used in the project came from a user on Kaggle<sup>1</sup>.
+All data from a user on Kaggle<sup>1</sup>.
 
 ## Question
 
