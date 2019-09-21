@@ -1,5 +1,7 @@
 # Player Point Predictor
 
+Created in collaboration with github.com/Huasenberg
+
 # Instructions 
 
 ## Libraries Needed
