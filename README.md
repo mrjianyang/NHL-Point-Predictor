@@ -1,6 +1,6 @@
 # Player Point Predictor
 
-Created in collaboration with github.com/Huasenberg
+Created in collaboration with [Huasenberg](https://github.com/Huasenberg)
 
 # Instructions 
 
